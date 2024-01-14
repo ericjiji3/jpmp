@@ -2,9 +2,11 @@ import Image from 'next/image';
 import CameraSit from '../../../public/cameraSit.png';
 import CameraStand from '../../../public/cameraStand.png';
 
+
 export default function Videos(){
     return(
         <div className='py-4'>
+            
             <div className='flex justify-between items-center'>
                 <div className='relative'>
                     <Image
@@ -18,7 +20,7 @@ export default function Videos(){
                         </svg>
                     </div>
                 </div>
-                <div className='relative z-[1] bg-[#FDF0D5] p-8 rounded-2xl drop-shadow-md'>
+                <div className='relative z-[1] bg-[#FDF0D5] p-8 rounded-2xl drop-shadow-md w-[80%]'>
                     <video controls width={500} className="w-full rounded-md border-black border-2">
                         <source src="/featuredVideo.mp4" />
                     </video>

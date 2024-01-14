@@ -25,6 +25,12 @@ module.exports = {
     dropShadow: {
       md : '10px 10px 0px rgba(0, 0, 0)',
       sm : '-10px 10px 0px rgba(0, 0, 0)'
+    },
+    keyframes: {
+      swipe: {
+        '0%': { transform: 'translate(0)' },
+        '100%': { transform: 'translate(-100%)' },
+      }
     }
   },
   plugins: [],
