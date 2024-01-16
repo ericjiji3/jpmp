@@ -30,6 +30,10 @@ module.exports = {
       swipe: {
         '0%': { transform: 'translate(0)' },
         '100%': { transform: 'translate(-100%)' },
+      },
+      swipeRev: {
+        '0%': { transform: 'translate(0)' },
+        '100%': { transform: 'translate(100%)' },
       }
     }
   },
