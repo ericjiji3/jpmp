@@ -1,3 +1,6 @@
+'use client';
+
+import { Parallax } from 'react-scroll-parallax';
 import Image from 'next/image';
 import CameraSit from '../../../public/cameraSit.png';
 import CameraStand from '../../../public/cameraStand.png';
@@ -5,9 +8,11 @@ import CameraStand from '../../../public/cameraStand.png';
 
 export default function Videos(){
     return(
+        
         <div className='py-4'>
             
             <div className='flex justify-between items-center'>
+                <Parallax translateX={[-100, 0]} startScroll={-100} endScroll={0}>
                 <div className='relative'>
                     <Image
                         src={CameraSit}
@@ -20,6 +25,7 @@ export default function Videos(){
                         </svg>
                     </div>
                 </div>
+                </Parallax>
                 <div className='relative z-[1] bg-[#FDF0D5] p-8 rounded-2xl drop-shadow-md w-[80%]'>
                     <video controls width={500} className="w-full rounded-md border-black border-2">
                         <source src="/featuredVideo.mp4" />
@@ -74,5 +80,6 @@ export default function Videos(){
             </div>
             
         </div>
+        
     )
 }
