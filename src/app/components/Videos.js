@@ -8,11 +8,11 @@ import CameraStand from '../../../public/cameraStand.png';
 
 export default function Videos(){
     return(
-        
+
         <div className='py-4'>
             
             <div className='flex justify-between items-center'>
-                <Parallax translateX={[-100, 0]} startScroll={-100} endScroll={0}>
+<Parallax translateX={[-100, 0]} startScroll={-100} endScroll={0}>
                 <div className='relative'>
                     <Image
                         src={CameraSit}
@@ -25,7 +25,7 @@ export default function Videos(){
                         </svg>
                     </div>
                 </div>
-                </Parallax>
+</Parallax>
                 <div className='relative z-[1] bg-[#FDF0D5] p-8 rounded-2xl drop-shadow-md w-[80%]'>
                     <video controls width={500} className="w-full rounded-md border-black border-2">
                         <source src="/featuredVideo.mp4" />
@@ -41,7 +41,7 @@ export default function Videos(){
                     </div>
                     <div>
                         <iframe className='w-full border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/JKdpSlDlILI?si=hc8LD7QP_rJ_AgMr&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                        <h2 className='text-2xl mt-4 text-center'>"WORTHLESS" By D4VD</h2>
+                        <h2 className='text-2xl mt-4 text-center'>&apos;WORTHLESS&apos; By D4VD</h2>
                     </div>
                     <div>
                         <iframe className='w-full border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/cubnywwLtwg?si=SMJAF5ZPRjBjt7P7" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
@@ -49,11 +49,11 @@ export default function Videos(){
                     </div>
                     <div>
                         <iframe className='w-full border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/NlkROS81rQg?si=DY8XxJ5dD9PzJBGi&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                        <h2 className='text-2xl mt-4 text-center'>"BETH"</h2>
+                        <h2 className='text-2xl mt-4 text-center'>&apos;BETH&apos;</h2>
                     </div>
                     <div>
                         <iframe className='w-full border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/NLiYuI5mHA4?si=ViNXLb5hb_mfk5--&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                        <h2 className='text-2xl mt-4 text-center'>"I FOUND"</h2>
+                        <h2 className='text-2xl mt-4 text-center'>&apos;I FOUND&apos;</h2>
                     </div>
                     <div>
                         <iframe className='w-full border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/j6cJ0CznX8Y?si=nnIoNrMz1MtZH-fD&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
@@ -80,6 +80,5 @@ export default function Videos(){
             </div>
             
         </div>
-        
     )
 }
