@@ -19,21 +19,25 @@ export default function Base() {
                         className="px-[15px]"
                             src={Motto}
                             width={250}
+                            alt="oops"
                         />
                             <Image
                             className="px-[15px]"
                             src={Motto}
                             width={250}
+                            alt="oops"
                         />
                             <Image
                             className="px-[15px] hidden 2xl:block"
                             src={Motto}
                             width={250}
+                            alt="oops"
                         />
                             <Image
                             className="px-[15px] hidden 2xl:block"
                             src={Motto}
                             width={250}
+                            alt="oops"
                         />
                             
                     </section>
@@ -42,22 +46,26 @@ export default function Base() {
                         className="px-[15px]"
                             src={Motto}
                             width={250}
+                            alt="oops"
                         />
                             <Image
                             className="px-[15px]"
                             src={Motto}
                             width={250}
+                            alt="oops"
                         />
                             <Image
                             className="px-[15px] hidden 2xl:block"
                             src={Motto}
                             width={250}
+                            alt="oops"
                         />
                             
                             <Image
                             className="px-[15px] hidden 2xl:block"
                             src={Motto}
                             width={250}
+                            alt="oops"
                         />
                     </section>
                     <section className="flex animate-[swipe_5s_linear_infinite_backwards]">
@@ -65,21 +73,25 @@ export default function Base() {
                         className="px-[15px]"
                             src={Motto}
                             width={250}
+                            alt="oops"
                         />
                             <Image
                             className="px-[15px]"
                             src={Motto}
                             width={250}
+                            alt="oops"
                         />
                             <Image
                             className="px-[15px] hidden 2xl:block"
                             src={Motto}
                             width={250}
+                            alt="oops"
                         />
                             <Image
                             className="px-[15px] hidden 2xl:block"
                             src={Motto}
                             width={250}
+                            alt="oops"
                         />
                             
                     </section>
