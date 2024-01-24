@@ -12,7 +12,7 @@ export default function Videos(){
         <div className='py-4'>
             
             <div className='flex justify-between items-center'>
-<Parallax translateX={[-100, 0]} startScroll={0} endScroll={700}>
+                <Parallax translateX={[-100, 0]} startScroll={0} endScroll={700}>
                 <div className='relative'>
                     <Image
                         src={CameraSit}
@@ -25,7 +25,7 @@ export default function Videos(){
                         </svg>
                     </div>
                 </div>
-</Parallax>
+                </Parallax>
             
                 <div className='relative z-[1] bg-[#FDF0D5] p-8 rounded-2xl drop-shadow-md w-[80%]'>
                     <Parallax opacity={[0, 1]} startScroll={0} endScroll={700}>
