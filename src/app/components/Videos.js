@@ -12,7 +12,7 @@ export default function Videos(){
         <div className='py-4'>
             
             <div className='flex justify-between items-center'>
-                <Parallax translateX={[-100, 0]} startScroll={0} endScroll={700}>
+                <Parallax translateX={[-200, 0]} startScroll={200} endScroll={800}>
                 <div className='relative'>
                     <Image
                         src={CameraSit}
@@ -20,7 +20,7 @@ export default function Videos(){
                         alt="oops"
                     />
                     <div className='absolute top-[-25px] left-[150px]'>
-                        <svg width="391" height="149" viewBox="0 0 391 149" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="300" height="149" viewBox="0 0 391 149" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 74.5L390.75 0.454834V148.545L0 74.5Z" fill="#FDF0D5"/>
                         </svg>
                     </div>
@@ -28,7 +28,7 @@ export default function Videos(){
                 </Parallax>
             
                 <div className='relative z-[1] bg-[#FDF0D5] p-8 rounded-2xl drop-shadow-md w-[80%]'>
-                    <Parallax opacity={[0, 1]} startScroll={0} endScroll={700}>
+                    <Parallax opacity={[0, 1]} startScroll={200} endScroll={800}>
                     <video controls width={500} className="w-full rounded-md border-black border-2">
                         <source src="/featuredVideo.mp4" />
                     </video>
@@ -39,10 +39,10 @@ export default function Videos(){
             </div>
             <h2 className='text-4xl text-center mt-14'>RECENT WORK</h2>
             <div className='flex justify-between mb-16'>
-                <div>
-                
-                <div className="bg-[#FDF0D5] p-8 rounded-2xl drop-shadow-sm mt-5 w-[80%] grid grid-cols-2 gap-6 relative z-[1]">
-                <Parallax opacity={[0, 1]} startScroll={0} endScroll={700} className='flex'>
+                <div className='w-[80%] bg-[#FDF0D5] p-8 rounded-2xl drop-shadow-sm mt-5 '>
+                <Parallax opacity={[0, 1]} startScroll={1000} endScroll={1700}>
+                <div className="w-full grid grid-cols-2 gap-6 relative z-[1]">
+                    
                     
                     <div>
                         <iframe className='w-full border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/IJZyeApOBl4?si=nxVHxVSAeT2xwuZN&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
@@ -53,12 +53,12 @@ export default function Videos(){
                         <h2 className='text-2xl mt-4 text-center'>&apos;WORTHLESS&apos; By D4VD</h2>
                     </div>
                     
-                    </Parallax>
+                    
                 </div>
-               
+                </Parallax>
                 </div>
                 <div className="flex relative mt-auto relative bottom-[-75px]">
-                    <Parallax translateX={[100, 0]} startScroll={700} endScroll={1400}>
+                    <Parallax translateX={[100, 0]} startScroll={1000} endScroll={1700}>
                     <div className='absolute right-[105px] bottom-[92px] z-[0]'>
                         <svg width="300" height="150" viewBox="0 0 455 150" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M454.241 149.088L24.9614 0.845461L0.148089 141.569L454.241 149.088Z" fill="#FDF0D5"/>
@@ -73,7 +73,10 @@ export default function Videos(){
                 </div>
             </div>
             <div className='flex justify-between mb-16'>
-                <div className="flex relative mt-auto relative bottom-[-75px] scale-x-[-1] z-[0]">
+                <div className="relative">
+                 
+                <Parallax translateX={[-200, 0]} startScroll={200} endScroll={800} className='relative bottom-[-75px]'> 
+                <div className="flex mt-auto relative scale-x-[-1] z-[0]">
                     <div className='absolute right-[105px] bottom-[92px] z-[0]'>
                         <svg width="300" height="150" viewBox="0 0 455 150" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M454.241 149.088L24.9614 0.845461L0.148089 141.569L454.241 149.088Z" fill="#FDF0D5"/>
@@ -85,6 +88,8 @@ export default function Videos(){
                         alt="oops"
                     />
                     
+                </div>
+                </Parallax>
                 </div>
                 <div className="bg-[#FDF0D5] p-8 rounded-2xl drop-shadow-md mt-14 w-[80%] grid grid-cols-2 gap-6 relative z-[1]">
                     <div>
