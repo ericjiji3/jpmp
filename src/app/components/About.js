@@ -1,8 +1,12 @@
+'use client';
+
 import Image from 'next/image';
+import { Parallax } from 'react-scroll-parallax';
 import MeFr from '../../../public/images/realPhoto.jpg';
 
 export default function About(){
     return(
+        <Parallax translateX={[200, 0]} startScroll={2000} endScroll={4250}>
         <div className='my-4 flex bg-[#FDF0D5] p-8 rounded-xl drop-shadow-md w-[75%] mx-auto border border-black border-[3px]'>
             <div className='w-fit p-4'>
                 <Image
@@ -22,5 +26,6 @@ export default function About(){
                 <span>I am passionate about my craft and consistently seeking opportunities to learn and gain experience. I believe in the power of storytelling and am committed to refining my skills to tell better, more compelling stories through the medium of film.</span>
             </div>
         </div>
+        </Parallax>
     )
 }

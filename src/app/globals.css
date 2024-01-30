@@ -25,6 +25,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    position: relative;
 }
 h1,h2, h3,h4,h5,h6{
   font-family: "Madness Hyperactive";
@@ -32,4 +33,16 @@ h1,h2, h3,h4,h5,h6{
 }
 a, div, span, p{
   font-family: "Slabserif";
+}
+.texturedContainer{
+   position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: repeat;
+  background-image: url("../../public/textureBg2.png");
+  pointer-events: none;
+  z-index: 0;
+  background-color: #F0544F;
 }

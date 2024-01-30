@@ -12,9 +12,9 @@ export default function Home(){
                         src={Logo}
                         width={250}
                         alt="oops"
-                        className="mx-auto"
+                        className="mx-auto w-[200px] lg:w-[250px]"
                     />
-                    <h2 className="text-white text-xl">
+                    <h2 className="text-white text-lg lg:text-xl tracking-[3px]">
                         IMPACTFUL NARRATIVES THROUGH CINEMATIC EXCELLENCE
                     </h2>
                 </div>
@@ -22,11 +22,11 @@ export default function Home(){
                 <div className="absolute bottom-0 z-[1] text-white w-full">
                     <div className="flex justify-center w-full">
                         <Link href='#contact'>
-                            <h4 className="text-xl px-4 py-2">Hire Me</h4>
+                            <h4 className="text-xl px-4 py-2 tracking-[3px]">Hire Me</h4>
                             
                         </Link>
                         <Link href='#videos'>
-                            <h4 className="text-xl px-4 py-2">My Work</h4>
+                            <h4 className="text-xl px-4 py-2 tracking-[3px]">My Work</h4>
                         </Link>
                     </div>
                     <div className="block mb-6">
@@ -37,7 +37,7 @@ export default function Home(){
                     </div>
                 </div>
             
-            <video autoPlay loop muted className="absolute h-auto w-full top-0 z-[0]">
+            <video autoPlay loop muted className="absolute h-full w-full object-cover top-0 z-[0]">
                 <source src="/homeVideo.mp4" />
             </video>
             </div>

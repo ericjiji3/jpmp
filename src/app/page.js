@@ -4,17 +4,20 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Videos from './components/Videos';
 import Motto from '../../public/images/motto.png';
+import HomeIcon from './components/HomeIcon';
 
 export default function Base() {
   return (
    <div className='overflow-hidden'>
-    <div>
+    <div className='texturedContainer'></div>
+    <div className='relative'>
       <Home/>
     </div>
+    <HomeIcon/>
     <div>
-    <div className='relative bg-[#F0544F] w-[125%] overflow-hidden h-[35px] flex items-center py-8'>
+    <div className='relative w-[125%] overflow-hidden h-[35px] flex items-center py-8'>
                 <div className='absolute flex w-[125%]'>
-                    <section className="flex animate-[swipe_5s_linear_infinite_backwards]">
+                    <section className="flex animate-[swipe_5s_linear_infinite_backwards] relative z-[1]">
                         <Image
                         className="px-[15px]"
                             src={Motto}
@@ -99,13 +102,14 @@ export default function Base() {
                 
             </div>
     </div>
-    <div className="bg-[#F0544F] px-8 overflow-hidden">
+    <div className="bg-[#F0544F] px-4 lg:px-8 overflow-hidden">
       <div id="videos">
         <Videos/>
       </div>
-      <div className='relative bg-[#F0544F] w-[125%] overflow-hidden h-[35px] flex items-center py-8'>
+     </div>
+     <div className='relative w-[125%] overflow-hidden h-[35px] flex items-center py-8'>
                 <div className='absolute flex w-[125%]'>
-                    <section className="flex animate-[swipe_5s_linear_infinite_backwards]">
+                    <section className="flex animate-[swipe_5s_linear_infinite_backwards] relative z-[1]">
                         <Image
                         className="px-[15px]"
                             src={Motto}
@@ -177,10 +181,11 @@ export default function Base() {
                 </div>
                 
             </div>
+     <div className="bg-[#F0544F] px-4 lg:px-8 overflow-hidden">
             <div id="about">
                 <About/>
             </div>
-            <div id="contact">
+            <div id="contact" className='relative z-[1]'>
                 <Contact/>
             </div>
         </div>

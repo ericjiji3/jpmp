@@ -1,6 +1,9 @@
+'use client';
+
 import Image from "next/image";
 import MeCall from '../../../public/images/meCTA.png';
 import MeFr from '../../../public/images/realPhoto.jpg';
+import { Parallax } from 'react-scroll-parallax';
 
 export default function Contact(){
     return(
@@ -26,6 +29,7 @@ export default function Contact(){
                     />
                 </div>
             </div>
+                <Parallax translateY={[100, 0]} opacity={[0,1]} startScroll={3500} endScroll={5000}>
                 <div className="border border-black border-[3px] bg-[#FDF0D5] p-8 drop-shadow-md rounded-xl w-full mx-auto">
                     <h2 className="text-3xl">Contact Me</h2>
                     <form>
@@ -48,7 +52,7 @@ export default function Contact(){
                         <button type="submit" className="bg-[#F0544F] w-full border border-black border-[3px] rounded-lg mt-3"><h2 className="text-2xl">SUBMIT</h2></button>
                     </form>
                 </div>
-            
+                </Parallax>
         </div>
     )
 }
