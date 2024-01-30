@@ -10,15 +10,19 @@ import { useState, useEffect } from 'react';
 export default function Videos(){
     const [work, setWork] = useState({
         start: 1000,
-        end: 1800
+        end: 1500
     })
     const [work2, setWork2] = useState({
-        start: 1900,
-        end: 2400
+        start: 1500,
+        end: 2000
     })
     const [work3, setWork3] = useState({
+        start: 2000,
+        end: 2400
+    })
+    const [work4, setWork4] = useState({
         start: 2400,
-        end: 3000
+        end: 3200
     })
     useEffect(()=>{
         console.log(window.innerWidth);
@@ -34,6 +38,10 @@ export default function Videos(){
             setWork3({
                 start: 1400,
                 end: 2000
+            })
+            setWork4({
+                start: 2000,
+                end: 2500
             })
          }
     }, [])
@@ -53,6 +61,10 @@ export default function Videos(){
             setWork3({
                 start: 1400,
                 end: 2000
+            })
+            setWork4({
+                start: 2000,
+                end: 2500
             })
          }
          
@@ -206,7 +218,7 @@ export default function Videos(){
             </div>
             <div className='flex justify-center mb-16'>
                 <div className='relative bottom-[-350px] right-[200px] z-[0]'>
-                <Parallax translateX={[-250, 0]} startScroll={3100} endScroll={3500}>
+                <Parallax translateX={[-250, 0]} startScroll={work4.start} endScroll={work4.end}>
                 <div className="flex relative mt-auto relative scale-x-[-1]">
                     <div className='absolute right-[105px] bottom-[115px] z-[0]'>
                         <svg width="455" height="150" viewBox="0 0 455 150" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -223,7 +235,7 @@ export default function Videos(){
                 </Parallax>                    
                 </div>
                 <div className='bg-[#FDF0D5] p-8 rounded-2xl drop-shadow-md mt-14 w-[40%]'>
-                <Parallax opacity={[0, 1]} startScroll={3100} endScroll={3500}>
+                <Parallax opacity={[0, 1]} startScroll={work4.start} endScroll={work4.end}>
                
                 <div className="grid grid-cols-1 gap-6 relative z-[1]">
 

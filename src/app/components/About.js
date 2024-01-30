@@ -6,7 +6,7 @@ import MeFr from '../../../public/images/realPhoto.jpg';
 
 export default function About(){
     return(
-        <Parallax translateX={[200, 0]} startScroll={2000} endScroll={4250}>
+        <Parallax translateX={[200, 0]} startScroll={2000} endScroll={3700}>
         <div className='my-4 flex bg-[#FDF0D5] p-8 rounded-xl drop-shadow-md w-[75%] mx-auto border border-black border-[3px]'>
             <div className='w-fit p-4'>
                 <Image
