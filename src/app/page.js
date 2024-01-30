@@ -10,7 +10,7 @@ export default function Base() {
   return (
    <div className='overflow-hidden'>
     <div className='texturedContainer'></div>
-    <div className='relative'>
+    <div className='relative' id="home">
       <Home/>
     </div>
     <HomeIcon/>
@@ -185,7 +185,7 @@ export default function Base() {
             <div id="about">
                 <About/>
             </div>
-            <div id="contact" className='relative z-[1]'>
+            <div className='relative z-[1]'>
                 <Contact/>
             </div>
         </div>

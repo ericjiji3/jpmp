@@ -16,7 +16,9 @@
   font-family: "Slabserif";
   src: url("../../public/fonts/Slabserif.otf");
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

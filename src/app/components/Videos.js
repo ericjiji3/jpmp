@@ -41,7 +41,7 @@ export default function Videos(){
             })
             setWork4({
                 start: 2000,
-                end: 2500
+                end: 2600
             })
          }
     }, [])
@@ -64,7 +64,7 @@ export default function Videos(){
             })
             setWork4({
                 start: 2000,
-                end: 2500
+                end: 2600
             })
          }
          
@@ -217,11 +217,11 @@ export default function Videos(){
                 </div>
             </div>
             <div className='flex justify-center mb-16'>
-                <div className='relative bottom-[-350px] right-[200px] z-[0]'>
+                <div className='relative bottom-[-200px] right-[10px] lg:bottom-[-350px] lg:right-[200px] z-[0]'>
                 <Parallax translateX={[-250, 0]} startScroll={work4.start} endScroll={work4.end}>
                 <div className="flex relative mt-auto relative scale-x-[-1]">
-                    <div className='absolute right-[105px] bottom-[115px] z-[0]'>
-                        <svg width="455" height="150" viewBox="0 0 455 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <div className='absolute right-[45px] bottom-[25px] lg:right-[105px] lg:bottom-[115px] z-[0]'>
+                        <svg width="300" height="150" viewBox="0 0 455 150" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M454.241 149.088L24.9614 0.845461L0.148089 141.569L454.241 149.088Z" fill="#FDF0D5"/>
                         </svg>
                     </div>
@@ -229,19 +229,20 @@ export default function Videos(){
                         src={CameraStand}
                         width={150}
                         alt="oops"
+                        className='w-[75px] h-auto lg:w-[150px]'
                     />
                     
                 </div>
                 </Parallax>                    
                 </div>
-                <div className='bg-[#FDF0D5] p-8 rounded-2xl drop-shadow-md mt-14 w-[40%]'>
+                <div className='bg-[#FDF0D5] px-2 py-4 lg:p-8 rounded-2xl drop-shadow-md mt-14 w-full lg:w-[40%]'>
                 <Parallax opacity={[0, 1]} startScroll={work4.start} endScroll={work4.end}>
                
                 <div className="grid grid-cols-1 gap-6 relative z-[1]">
 
                     <div>
-                        <iframe className='w-full border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/-6xjI3wfE4Y?si=JEdXIauUD3pp9hJ_&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-                        <h2 className='text-2xl mt-4 text-center'>Dylan and Mattie</h2>
+                        <iframe className='w-full h-auto lg:h-[350px]border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/-6xjI3wfE4Y?si=JEdXIauUD3pp9hJ_&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                        <h2 className='text-lg lg:text-2xl mt-4 text-center'>Dylan and Mattie</h2>
                     </div>
                 </div>
                 
