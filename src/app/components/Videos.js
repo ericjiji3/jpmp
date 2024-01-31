@@ -149,12 +149,11 @@ export default function Videos(){
                     <div className='relative'>
                         <a href="https://www.youtube.com/watch?v=IJZyeApOBl4&feature=youtu.be" target="_blank">
                         {/* <iframe className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/IJZyeApOBl4?si=nxVHxVSAeT2xwuZN&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
-                        <Image
-                            src='/narrativeGif.gif'
+                        <img
+                            src='./narrativeGif.gif'
                             width={560}
-                            height={350}
-                            className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
                             alt="oops"
+                            className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
                         />
                         <Image
                             src={PlayIcon}
