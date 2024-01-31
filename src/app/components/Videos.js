@@ -166,12 +166,18 @@ export default function Videos(){
                     </div>
                     <div className='relative'>
                         <a href="https://www.youtube.com/watch?v=JKdpSlDlILI" target="_blank">
-                        <Image
+                        {/* <Image
                             src={Worthless}
                             width={560}
                             height={350}
                             className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
                             alt="oops"
+                        /> */}
+                        <img
+                            src='./worthlessGif.gif'
+                            width={560}
+                            alt="oops"
+                            className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
                         />
                         <Image
                             src={PlayIcon}
@@ -228,12 +234,18 @@ export default function Videos(){
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 relative z-[1]">
                     <div className='relative'>
                         <a href="https://www.youtube.com/watch?v=cubnywwLtwg&feature=youtu.be" target="_blank">
-                        <Image
+                        {/* <Image
                             src={OhLord}
                             width={560}
                             height={350}
                             className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
                             alt="oops"
+                        /> */}
+                        <img
+                            src='./ohLordGif.gif'
+                            width={560}
+                            alt="oops"
+                            className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
                         />
                         <Image
                             src={PlayIcon}
@@ -246,12 +258,18 @@ export default function Videos(){
                     </div>
                     <div className='relative'>
                         <a href="https://www.youtube.com/watch?v=NlkROS81rQg" target="_blank">
-                        <Image
+                        {/* <Image
                             src={Beth}
                             width={560}
                             height={350}
                             className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
                             alt="oops"
+                        /> */}
+                        <img
+                            src='./bethGif.gif'
+                            width={560}
+                            alt="oops"
+                            className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
                         />
                         <Image
                             src={PlayIcon}
@@ -274,12 +292,18 @@ export default function Videos(){
                     <div className='relative'>
                         {/* <iframe className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/NLiYuI5mHA4?si=ViNXLb5hb_mfk5--&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
                         <a href="https://www.youtube.com/watch?v=NLiYuI5mHA4" target="_blank">
-                        <Image
+                        {/* <Image
                             src={IFound}
                             width={560}
                             height={350}
                             className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
                             alt="oops"
+                        /> */}
+                        <img
+                            src='./iFoundGif.gif'
+                            width={560}
+                            alt="oops"
+                            className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
                         />
                         <Image
                             src={PlayIcon}
@@ -292,12 +316,18 @@ export default function Videos(){
                     </div>
                     <div className='relative'>
                         <a href="https://www.youtube.com/watch?v=j6cJ0CznX8Y&feature=youtu.be" target="_blank">
-                        <Image
+                        {/* <Image
                             src={Wedding}
                             width={560}
                             height={350}
                             className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
                             alt="oops"
+                        /> */}
+                        <img
+                            src='./weddingGif.gif'
+                            width={560}
+                            alt="oops"
+                            className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
                         />
                         <Image
                             src={PlayIcon}
@@ -357,12 +387,18 @@ export default function Videos(){
 
                     <div className='relative'>
                         <a href="https://www.youtube.com/watch?v=-6xjI3wfE4Y" target="_blank">
-                        <Image
+                        {/* <Image
                             src={Dylan}
                             width={560}
                             height={350}
                             className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
                             alt="oops"
+                        /> */}
+                        <img
+                            src='./dylanGif.gif'
+                            width={560}
+                            alt="oops"
+                            className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
                         />
                         <Image
                             src={PlayIcon}
