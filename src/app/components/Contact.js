@@ -17,7 +17,7 @@ export default function Contact(){
          if(window.innerWidth <= 1024){
             setContact({
                 start: 3000,
-                end: 3300
+                end: 4000
             })
 
          }
@@ -29,7 +29,7 @@ export default function Contact(){
          if(window.innerWidth <= 1024){
             setContact({
                 start: 3000,
-                end: 3300
+                end: 4000
             })
          }
          
@@ -68,7 +68,7 @@ export default function Contact(){
                 </div>
             </div>
                 <Parallax translateY={[100, 0]} opacity={[0,1]} startScroll={contact.start} endScroll={contact.end}>
-                <div className="border border-black border-[3px] bg-[#FDF0D5] p-8 drop-shadow-md rounded-xl w-full mx-auto">
+                <div className="border border-black border-[3px] bg-[#FDF0D5] px-2 py-4 lg:p-8 drop-shadow-md rounded-xl w-full mx-auto">
                     <h2 className="text-xl lg:text-3xl">Contact Me</h2>
                     <form>
                         <div className="flex flex-wrap w-full justify-between my-1">

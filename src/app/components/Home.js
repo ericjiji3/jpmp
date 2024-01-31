@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Home(){
     return(
-        <div className="relative h-screen w-full bg-black overflow-hidden">
+        <div className="relative h-[100dvh] w-full bg-black overflow-hidden">
             
                 <h1 className="hidden">JP Motion Pictures</h1>
                 <div className="relative z-[1] text-center w-full pt-12">
@@ -37,7 +37,7 @@ export default function Home(){
                     </div>
                 </div>
             
-            <video autoPlay loop muted className="absolute h-full w-full object-cover top-0 z-[0]">
+            <video autoPlay loop muted controls='' className="absolute h-full w-full object-cover top-0 z-[0]">
                 <source src="/homeVideo.mp4" />
             </video>
             </div>

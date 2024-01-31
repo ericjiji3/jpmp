@@ -5,9 +5,20 @@ import Image from 'next/image';
 import CameraSit from '../../../public/cameraSit.png';
 import CameraStand from '../../../public/cameraStand.png';
 import CameraShrug from '../../../public/cameraShrug.png';
-import { useState, useEffect } from 'react';
+import PlayIcon from '../../../public/playIcon.png';
+import Beth from '../../../public/bethGif.gif';
+import Dylan from '../../../public/dylanGif.gif';
+import IFound from '../../../public/iFoundGif.gif';
+import Narrative from '../../../public/narrativeGif.gif';
+import OhLord from '../../../public/ohLordGif.gif';
+import Wedding from '../../../public/weddingGif.gif';
+import Worthless from '../../../public/worthlessGif.gif';
+import { useState, useEffect, useRef } from 'react';
 
 export default function Videos(){
+    const videoRef = useRef(null);
+    const [play, setPlay] = useState(false);
+
     const [work, setWork] = useState({
         start: 1000,
         end: 1500
@@ -78,13 +89,24 @@ export default function Videos(){
         
       }, []);
 
+      const toggleVideo = () =>{
+        if(videoRef.current.paused){
+            videoRef.current.play();
+            setPlay(true);
+        }else{
+            videoRef.current.pause();
+            setPlay(false);
+        }
+        
+      }
+
     return(
 
         <div className='py-4'>
             
             <div className='flex flex-row relative justify-between items-center'>
                 <Parallax translateX={[-200, 0]} startScroll={200} endScroll={1100}>
-                <div className='relative lg:right-0 lg:rotate-0 lg:mt-0'>
+                <div className='relative hidden lg:block lg:right-0 lg:rotate-0 lg:mt-0'>
                     <Image
                         src={CameraSit}
                         width={150}
@@ -101,10 +123,18 @@ export default function Videos(){
             
                 <div className='relative z-[1] bg-[#FDF0D5] p-2 lg:p-8 rounded-2xl drop-shadow-md w-full lg:w-[80%]'>
                     <Parallax opacity={[0, 1]} startScroll={200} endScroll={800}>
-                    <video controls width={500} className="w-[500px] lg:w-full rounded-md border-black border-2">
-                        <source src="/featuredVideo.mp4" />
-                    </video>
-                    <h2 className='text-lg lg:text-3xl mt-2 lg:mt-4 text-center'>Directing And Cinematography Reel</h2>
+                    <div onClick={toggleVideo} className='cursor-pointer'>
+                        <video width={500} className="w-[500px] lg:w-full rounded-md border-black border-2" poster="thumbnail.png" ref={videoRef}>
+                            <source src="/featuredVideo.mp4" />
+                        </video>
+                        <Image
+                            src={PlayIcon}
+                            width={100}
+                            alt="oops"
+                            className={play ? 'hidden' : 'block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[50px] lg:w-[100px]'}
+                        />
+                    </div>
+                    {/* <h2 className='text-lg lg:text-3xl mt-2 lg:mt-4 text-center'>Directing And Cinematography Reel</h2> */}
                     </Parallax>
                 </div>
                 
@@ -116,13 +146,42 @@ export default function Videos(){
                 <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6 relative z-[1]">
                     
                     
-                    <div>
-                        <iframe className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/IJZyeApOBl4?si=nxVHxVSAeT2xwuZN&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                    <div className='relative'>
+                        <a href="https://www.youtube.com/watch?v=IJZyeApOBl4&feature=youtu.be" target="_blank">
+                        {/* <iframe className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/IJZyeApOBl4?si=nxVHxVSAeT2xwuZN&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
+                        <Image
+                            src={Narrative}
+                            width={560}
+                            height={350}
+                            className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
+                            alt="oops"
+                        />
+                        <Image
+                            src={PlayIcon}
+                            width={75}
+                            alt="oops"
+                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px]'
+                        />
                         <h2 className='text-lg lg:text-2xl mt-4 text-center'>Narratives of the Migrant Body</h2>
+                        </a>
                     </div>
-                    <div>
-                        <iframe className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/JKdpSlDlILI?si=hc8LD7QP_rJ_AgMr&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                    <div className='relative'>
+                        <a href="https://www.youtube.com/watch?v=JKdpSlDlILI" target="_blank">
+                        <Image
+                            src={Worthless}
+                            width={560}
+                            height={350}
+                            className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
+                            alt="oops"
+                        />
+                        <Image
+                            src={PlayIcon}
+                            width={75}
+                            alt="oops"
+                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px]'
+                        />
                         <h2 className='text-lg lg:text-2xl mt-4 text-center'>&apos;WORTHLESS&apos; By D4VD</h2>
+                        </a>
                     </div>
                     
                     
@@ -168,13 +227,41 @@ export default function Videos(){
                 <div className="w-full lg:w-[82%] bg-[#FDF0D5] px-2 py-4 lg:p-8 rounded-2xl drop-shadow-md mt-5">
                 <Parallax opacity={[0, 1]} startScroll={work2.start} endScroll={work2.end}>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 relative z-[1]">
-                    <div>
-                        <iframe className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/cubnywwLtwg?si=SMJAF5ZPRjBjt7P7" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                    <div className='relative'>
+                        <a href="https://www.youtube.com/watch?v=cubnywwLtwg&feature=youtu.be" target="_blank">
+                        <Image
+                            src={OhLord}
+                            width={560}
+                            height={350}
+                            className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
+                            alt="oops"
+                        />
+                        <Image
+                            src={PlayIcon}
+                            width={75}
+                            alt="oops"
+                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px]'
+                        />
                         <h2 className='text-lg lg:text-2xl mt-4 text-center'>OH LORD, BENEFITS</h2>
+                        </a>
                     </div>
-                    <div>
-                        <iframe className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/NlkROS81rQg?si=DY8XxJ5dD9PzJBGi&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                    <div className='relative'>
+                        <a href="https://www.youtube.com/watch?v=NlkROS81rQg" target="_blank">
+                        <Image
+                            src={Beth}
+                            width={560}
+                            height={350}
+                            className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
+                            alt="oops"
+                        />
+                        <Image
+                            src={PlayIcon}
+                            width={75}
+                            alt="oops"
+                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px]'
+                        />
                         <h2 className='text-lg lg:text-2xl mt-4 text-center'>&apos;BETH&apos;</h2>
+                        </a>
                     </div>
                 </div>
                 </Parallax>                    
@@ -185,13 +272,42 @@ export default function Videos(){
                 <Parallax opacity={[0, 1]} startScroll={work3.start} endScroll={work3.end}>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 relative z-[1]">
 
-                    <div>
-                        <iframe className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/NLiYuI5mHA4?si=ViNXLb5hb_mfk5--&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                    <div className='relative'>
+                        {/* <iframe className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/NLiYuI5mHA4?si=ViNXLb5hb_mfk5--&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
+                        <a href="https://www.youtube.com/watch?v=NLiYuI5mHA4" target="_blank">
+                        <Image
+                            src={IFound}
+                            width={560}
+                            height={350}
+                            className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
+                            alt="oops"
+                        />
+                        <Image
+                            src={PlayIcon}
+                            width={75}
+                            alt="oops"
+                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px]'
+                        />
                         <h2 className='text-lg lg:text-2xl mt-4 text-center'>&apos;I FOUND&apos;</h2>
+                        </a>
                     </div>
-                    <div>
-                        <iframe className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/j6cJ0CznX8Y?si=nnIoNrMz1MtZH-fD&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                    <div className='relative'>
+                        <a href="https://www.youtube.com/watch?v=j6cJ0CznX8Y&feature=youtu.be" target="_blank">
+                        <Image
+                            src={Wedding}
+                            width={560}
+                            height={350}
+                            className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
+                            alt="oops"
+                        />
+                        <Image
+                            src={PlayIcon}
+                            width={75}
+                            alt="oops"
+                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px]'
+                        />
                         <h2 className='text-lg lg:text-2xl mt-4 text-center'>Grant Wedding Highlight Reel</h2>
+                        </a>
                     </div>
 
                 </div>
@@ -240,9 +356,23 @@ export default function Videos(){
                
                 <div className="grid grid-cols-1 gap-6 relative z-[1]">
 
-                    <div>
-                        <iframe className='w-full h-auto lg:h-[350px]border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/-6xjI3wfE4Y?si=JEdXIauUD3pp9hJ_&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                    <div className='relative'>
+                        <a href="https://www.youtube.com/watch?v=-6xjI3wfE4Y" target="_blank">
+                        <Image
+                            src={Dylan}
+                            width={560}
+                            height={350}
+                            className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
+                            alt="oops"
+                        />
+                        <Image
+                            src={PlayIcon}
+                            width={75}
+                            alt="oops"
+                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px]'
+                        />
                         <h2 className='text-lg lg:text-2xl mt-4 text-center'>Dylan and Mattie</h2>
+                        </a>
                     </div>
                 </div>
                 

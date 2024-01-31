@@ -45,7 +45,7 @@ export default function About(){
 
     return(
         <Parallax translateX={[200, 0]} startScroll={about.start} endScroll={about.end}>
-        <div className='my-4 flex flex-col lg:flex-row bg-[#FDF0D5] p-8 rounded-xl drop-shadow-md w-full lg:w-[75%] mx-auto border border-black border-[3px]'>
+        <div className='my-4 flex flex-col lg:flex-row bg-[#FDF0D5] px-2 py-4 lg:p-8 rounded-xl drop-shadow-md w-full lg:w-[75%] mx-auto border border-black border-[3px]'>
             <div className='w-fit p-4'>
                 <Image
                     src={MeFr}
