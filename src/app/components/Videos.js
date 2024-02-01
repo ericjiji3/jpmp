@@ -116,6 +116,7 @@ export default function Videos(){
                     <div className='absolute top-[-50px] left-[65px] lg:top-[-25px] lg:left-[150px]'>
                         <svg width="300" height="149" viewBox="0 0 391 149" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 74.5L390.75 0.454834V148.545L0 74.5Z" fill="#FDF0D5"/>
+                        
                         </svg>
                     </div>
                 </div>
@@ -123,17 +124,23 @@ export default function Videos(){
             
                 <div className='relative z-[1] bg-[#FDF0D5] p-2 lg:p-8 rounded-2xl drop-shadow-md w-full lg:w-[80%]'>
                     <Parallax opacity={[0, 1]} startScroll={200} endScroll={800}>
-                    <div onClick={toggleVideo} className='cursor-pointer'>
-                        <video width={500} className="w-[500px] lg:w-full rounded-md border-black border-2" poster="thumbnail.png" ref={videoRef}>
+                    <a href="https://www.youtube.com/watch?v=0OaRs5FaGi8" target="_blank">
+                        {/* <video width={500} className="w-[500px] lg:w-full rounded-md border-black border-2" poster="thumbnail.png" ref={videoRef}>
                             <source src="/featuredVideo.mp4" />
-                        </video>
+                        </video> */}
+                        <img
+                            src='./directingReel.gif'
+                            width={560}
+                            alt="oops"
+                            className='w-full h-auto lg:h-[500px] border border-black border-[2px] rounded-md object-cover'
+                        />
                         <Image
                             src={PlayIcon}
                             width={100}
                             alt="oops"
-                            className={play ? 'hidden' : 'block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[50px] lg:w-[100px]'}
+                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[50px] lg:w-[100px]'
                         />
-                    </div>
+                    </a>
                     {/* <h2 className='text-lg lg:text-3xl mt-2 lg:mt-4 text-center'>Directing And Cinematography Reel</h2> */}
                     </Parallax>
                 </div>
@@ -141,7 +148,7 @@ export default function Videos(){
             </div>
             <h2 className='text-3xl lg:text-4xl text-center mt-14 mb-5 relative z-[2]'>RECENT WORK</h2>
             <div className='flex justify-between mb-16'>
-                <div className='w-full lg:w-[82%] bg-[#FDF0D5] px-2 py-4 lg:p-8 rounded-2xl drop-shadow-sm mt-5 relative z-[1]'>
+                <div className='noise w-full lg:w-[82%] bg-[#FDF0D5] px-2 py-4 lg:p-8 rounded-2xl drop-shadow-sm mt-5 relative z-[1]'>
                 <Parallax opacity={[0, 1]} startScroll={work.start} endScroll={work.end}>
                 <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6 relative z-[1]">
                     
@@ -150,7 +157,7 @@ export default function Videos(){
                         <a href="https://www.youtube.com/watch?v=IJZyeApOBl4&feature=youtu.be" target="_blank">
                         {/* <iframe className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/IJZyeApOBl4?si=nxVHxVSAeT2xwuZN&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
                         <img
-                            src='./narrativeGif.gif'
+                            src='./ohLordGif.gif'
                             width={560}
                             alt="oops"
                             className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
@@ -229,9 +236,9 @@ export default function Videos(){
                 </div>
                 </Parallax>
                 </div>
-                <div className="w-full lg:w-[82%] bg-[#FDF0D5] px-2 py-4 lg:p-8 rounded-2xl drop-shadow-md mt-5">
+                <div className="w-full lg:w-[82%] bg-[#FDF0D5] px-2 py-4 lg:p-8 rounded-2xl drop-shadow-md mt-5 relative z-[2] noise">
                 <Parallax opacity={[0, 1]} startScroll={work2.start} endScroll={work2.end}>
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 relative z-[1]">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 relative">
                     <div className='relative'>
                         <a href="https://www.youtube.com/watch?v=cubnywwLtwg&feature=youtu.be" target="_blank">
                         {/* <Image
@@ -242,7 +249,7 @@ export default function Videos(){
                             alt="oops"
                         /> */}
                         <img
-                            src='./ohLordGif.gif'
+                            src='./narrativeGif.gif'
                             width={560}
                             alt="oops"
                             className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
@@ -251,7 +258,7 @@ export default function Videos(){
                             src={PlayIcon}
                             width={75}
                             alt="oops"
-                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px]'
+                            className='block absolute z-[2] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px]'
                         />
                         <h2 className='text-lg lg:text-2xl mt-4 text-center'>OH LORD, BENEFITS</h2>
                         </a>
@@ -285,7 +292,7 @@ export default function Videos(){
                 </div>
             </div>
             <div className='flex justify-between mb-16'>
-                <div className="bg-[#FDF0D5] px-2 py-4 lg:p-8 rounded-2xl drop-shadow-sm mt-5 w-[82%] relative z-[1]">
+                <div className="bg-[#FDF0D5] px-2 py-4 lg:p-8 rounded-2xl drop-shadow-sm mt-5 w-[82%] relative z-[2] noise">
                 <Parallax opacity={[0, 1]} startScroll={work3.start} endScroll={work3.end}>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 relative z-[1]">
 
@@ -380,7 +387,7 @@ export default function Videos(){
                 </div>
                 </Parallax>                    
                 </div>
-                <div className='bg-[#FDF0D5] px-2 py-4 lg:p-8 rounded-2xl drop-shadow-md mt-14 w-full lg:w-[40%]'>
+                <div className='bg-[#FDF0D5] px-2 py-4 lg:p-8 rounded-2xl drop-shadow-md mt-14 w-full lg:w-[40%] z-[2] noise'>
                 <Parallax opacity={[0, 1]} startScroll={work4.start} endScroll={work4.end}>
                
                 <div className="grid grid-cols-1 gap-6 relative z-[1]">

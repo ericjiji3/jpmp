@@ -19,7 +19,7 @@ export default function Base() {
     </div>
     <HomeIcon/>
     <div>
-    <div className='relative w-[125%] overflow-hidden h-[35px] flex items-center py-8'>
+    <div className='relative bg-[#F0544F] w-[125%] overflow-hidden h-[35px] flex items-center py-8'>
                 <Banner/>
             </div>
     </div>
@@ -28,7 +28,7 @@ export default function Base() {
         <Videos/>
       </div>
      </div>
-     <div className='relative w-[125%] overflow-hidden h-[35px] flex items-center py-8'>
+     <div className='relative bg-[#F0544F] w-[125%] overflow-hidden h-[35px] flex items-center py-8'>
         <Banner/>
                 
             </div>
@@ -36,7 +36,7 @@ export default function Base() {
             <div id="about">
                 <About/>
             </div>
-            <div className='relative z-[1]'>
+            <div className='relative'>
                 <Contact/>
             </div>
             <div className='relative z-[1] flex gap-1 items-center'>

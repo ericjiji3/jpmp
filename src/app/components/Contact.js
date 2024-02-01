@@ -44,7 +44,7 @@ export default function Contact(){
       }, []);
 
     return(
-        <div className="pt-1 pb-5" id="contact">
+        <div className="pt-1 pb-5 relative z-[1]" id="contact">
             <div className="flex justify-between items-center py-10">
                 <div>
                     <Image
@@ -68,24 +68,24 @@ export default function Contact(){
                 </div>
             </div>
                 <Parallax translateY={[100, 0]} opacity={[0,1]} startScroll={contact.start} endScroll={contact.end}>
-                <div className="border border-black border-[3px] bg-[#FDF0D5] px-2 py-4 lg:p-8 drop-shadow-md rounded-xl w-full mx-auto">
+                <div className="noise border border-black border-[3px] bg-[#FDF0D5] px-2 py-4 lg:p-8 drop-shadow-md rounded-xl w-full mx-auto">
                     <h2 className="text-xl lg:text-3xl">Contact Me</h2>
                     <form>
                         <div className="flex flex-wrap w-full justify-between my-1">
                             <label><h2 className="text-lg lg:text-xl">Name*:</h2></label>
-                            <input className="w-[100%] bg-[#FDF0D5] border-black border-b-[3px] mt-[-5px]" type='text' name="name"/>
+                            <input className="noise w-[100%] bg-[#FDF0D5] border-black border-b-[3px] mt-[-5px]" type='text' name="name"/>
                         </div>
                         <div className="flex flex-wrap w-full justify-between my-1">
                             <label><h2 className="text-lg lg:text-xl">Email*:</h2></label>
-                            <input className="w-[100%] bg-[#FDF0D5] border-black border-b-[3px] mt-[-5px]" type='text' name="email"/>
+                            <input className="noise w-[100%] bg-[#FDF0D5] border-black border-b-[3px] mt-[-5px]" type='text' name="email"/>
                         </div>
                         <div className="flex flex-wrap w-full justify-between my-1">
                             <label><h2 className="text-lg lg:text-xl">Phone:</h2></label>
-                            <input className="w-[100%] bg-[#FDF0D5] border-black border-b-[3px] mt-[-5px]" type='text' name="phone"/>
+                            <input className="noise w-[100%] bg-[#FDF0D5] border-black border-b-[3px] mt-[-5px]" type='text' name="phone"/>
                         </div>
                         <div className="my-1">
                             <label><h2 className="text-lg lg:text-xl">Message:</h2></label>
-                            <textarea name="message" rows="15" className="w-full bg-[#FDF0D5] border-black border-[3px] rounded-lg p-4"></textarea>
+                            <textarea name="message" rows="15" className="noise w-full bg-[#FDF0D5] border-black border-[3px] rounded-lg p-4"></textarea>
                         </div>
                         <button type="submit" className="bg-[#F0544F] w-full border border-black border-[3px] rounded-lg mt-3"><h2 className="text-lg lg:text-2xl">SUBMIT</h2></button>
                     </form>
