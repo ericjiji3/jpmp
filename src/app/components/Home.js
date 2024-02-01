@@ -37,7 +37,8 @@ export default function Home(){
                     </div>
                 </div>
             
-            <video autoPlay loop muted controls='' className="absolute h-full w-full object-cover top-0 z-[0]">
+            {/* <video autoPlay loop muted controls='' className="absolute h-full w-full object-cover top-0 z-[0]"> */}
+            <video loop muted autoPlay playsInLine={true} className="absolute h-full w-full object-cover top-0 z-[0]">
                 <source src="/homeVideo.mp4" />
             </video>
             </div>
