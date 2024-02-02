@@ -39,13 +39,14 @@ export default function Base() {
             <div className='relative'>
                 <Contact/>
             </div>
+            <div className='flex justify-between'>
             <div className='relative z-[1] flex gap-1 items-center'>
                 <a href="https://www.instagram.com/dontneverquit/">
                 <Image
                     src={Insta}
                     width={20}
                     alt="oops"
-                    className='h-full'
+                    className='h-full w-[20px] lg:w-[30px]'
                 />
                 </a>
                 <a href="https://www.youtube.com/@dontneverquit">
@@ -53,15 +54,17 @@ export default function Base() {
                     src={Youtube}
                     width={25}
                     alt="oops"
-                    className='h-full'
+                    className='h-full w-[25px] lg:w-[37px]'
                 />
                 </a>
                 
             </div>
             <div className='relative z-[1] my-2'>
-                <span className='block text-xs'>Website By: <a href="https://www.instagram.com/jiji.web/" className='underline'>@jiji.web</a></span>
-                <span className='block text-xs'>Logos By: <a href="https://www.instagram.com/naturaworks/" className='underline'>@naturaworks</a></span>
+                <span className='block text-xs lg:text-sm'>Website By: <a href="https://www.instagram.com/jiji.web/" className='underline'>@jiji.web</a></span>
+                <span className='block text-xs lg:text-sm'>Logos By: <a href="https://www.instagram.com/naturaworks/" className='underline'>@naturaworks</a></span>
             </div>
+            </div>
+            
         </div>
       
 

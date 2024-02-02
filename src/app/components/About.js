@@ -16,8 +16,8 @@ export default function About(){
         console.log(window.innerWidth);
          if(window.innerWidth <= 1024){
             setAbout({
-                start: 2500,
-                end: 3000
+                start: 2800,
+                end: 3800
             })
 
          }

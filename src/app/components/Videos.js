@@ -21,19 +21,19 @@ export default function Videos(){
 
     const [work, setWork] = useState({
         start: 1000,
-        end: 1500
-    })
-    const [work2, setWork2] = useState({
-        start: 1500,
         end: 2000
     })
-    const [work3, setWork3] = useState({
+    const [work2, setWork2] = useState({
         start: 2000,
         end: 2400
     })
-    const [work4, setWork4] = useState({
+    const [work3, setWork3] = useState({
         start: 2400,
-        end: 3200
+        end: 2800
+    })
+    const [work4, setWork4] = useState({
+        start: 2800,
+        end: 3300
     })
     useEffect(()=>{
         console.log(window.innerWidth);
@@ -122,24 +122,31 @@ export default function Videos(){
                 </div>
                 </Parallax>
             
-                <div className='relative z-[1] bg-[#FDF0D5] p-2 lg:p-8 rounded-2xl drop-shadow-md w-full lg:w-[80%]'>
+                <div className='noise relative z-[1] bg-[#FDF0D5] p-2 lg:pt-2 lg:p-8 rounded-2xl drop-shadow-md w-full lg:w-[80%]'>
                     <Parallax opacity={[0, 1]} startScroll={200} endScroll={800}>
-                    <a href="https://www.youtube.com/watch?v=0OaRs5FaGi8" target="_blank">
-                        {/* <video width={500} className="w-[500px] lg:w-full rounded-md border-black border-2" poster="thumbnail.png" ref={videoRef}>
+
+                        <a href="https://www.youtube.com/watch?v=0OaRs5FaGi8" target="_blank" className='group relative flex items-center justify-center'>
+                        <h2 className='text-lg lg:text-3xl text-center relative z-[2]'>MY DEMO REEL</h2>
+                        <Image
+                                src={PlayIcon}
+                                width={35}
+                                alt="oops"
+                                className='block w-[35px] mb-1 ml-3 h-auto lg:w-[35px] group-hover:scale-[1.3] transition-all duration-250'
+                            />
+                        </a>
+                    
+                    
+                    <a href="https://www.youtube.com/watch?v=0OaRs5FaGi8" target="_blank" className='relative'>
+                        <video loop muted autoPlay playsInline={true} width={500} className="w-[500px] lg:w-full rounded-md border-black border-2" poster="thumbnail.png" ref={videoRef}>
                             <source src="/featuredVideo.mp4" />
-                        </video> */}
-                        <img
+                        </video>
+                        {/* <img
                             src='./directingReel.gif'
                             width={560}
                             alt="oops"
                             className='w-full h-auto lg:h-[500px] border border-black border-[2px] rounded-md object-cover'
-                        />
-                        <Image
-                            src={PlayIcon}
-                            width={100}
-                            alt="oops"
-                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-[50px] lg:w-[100px]'
-                        />
+                        /> */}
+                        
                     </a>
                     {/* <h2 className='text-lg lg:text-3xl mt-2 lg:mt-4 text-center'>Directing And Cinematography Reel</h2> */}
                     </Parallax>
@@ -154,7 +161,7 @@ export default function Videos(){
                     
                     
                     <div className='relative'>
-                        <a href="https://www.youtube.com/watch?v=IJZyeApOBl4&feature=youtu.be" target="_blank">
+                        <a href="https://www.youtube.com/watch?v=IJZyeApOBl4&feature=youtu.be" target="_blank" className='group'>
                         {/* <iframe className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/IJZyeApOBl4?si=nxVHxVSAeT2xwuZN&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
                         <img
                             src='./ohLordGif.gif'
@@ -166,13 +173,13 @@ export default function Videos(){
                             src={PlayIcon}
                             width={75}
                             alt="oops"
-                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px]'
+                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px] group-hover:scale-[1.2] transition-all duration-250'
                         />
                         <h2 className='text-lg lg:text-2xl mt-4 text-center'>Narratives of the Migrant Body</h2>
                         </a>
                     </div>
                     <div className='relative'>
-                        <a href="https://www.youtube.com/watch?v=JKdpSlDlILI" target="_blank">
+                        <a href="https://www.youtube.com/watch?v=JKdpSlDlILI" target="_blank" className='group'>
                         {/* <Image
                             src={Worthless}
                             width={560}
@@ -190,7 +197,7 @@ export default function Videos(){
                             src={PlayIcon}
                             width={75}
                             alt="oops"
-                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px]'
+                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px] group-hover:scale-[1.2] transition-all duration-250'
                         />
                         <h2 className='text-lg lg:text-2xl mt-4 text-center'>&apos;WORTHLESS&apos; By D4VD</h2>
                         </a>
@@ -240,7 +247,7 @@ export default function Videos(){
                 <Parallax opacity={[0, 1]} startScroll={work2.start} endScroll={work2.end}>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 relative">
                     <div className='relative'>
-                        <a href="https://www.youtube.com/watch?v=cubnywwLtwg&feature=youtu.be" target="_blank">
+                        <a href="https://www.youtube.com/watch?v=cubnywwLtwg&feature=youtu.be" target="_blank" className='group'>
                         {/* <Image
                             src={OhLord}
                             width={560}
@@ -258,13 +265,13 @@ export default function Videos(){
                             src={PlayIcon}
                             width={75}
                             alt="oops"
-                            className='block absolute z-[2] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px]'
+                            className='block absolute z-[2] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px] group-hover:scale-[1.2] transition-all duration-250'
                         />
                         <h2 className='text-lg lg:text-2xl mt-4 text-center'>OH LORD, BENEFITS</h2>
                         </a>
                     </div>
                     <div className='relative'>
-                        <a href="https://www.youtube.com/watch?v=NlkROS81rQg" target="_blank">
+                        <a href="https://www.youtube.com/watch?v=NlkROS81rQg" target="_blank" className='group'>
                         {/* <Image
                             src={Beth}
                             width={560}
@@ -282,7 +289,7 @@ export default function Videos(){
                             src={PlayIcon}
                             width={75}
                             alt="oops"
-                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px]'
+                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px] group-hover:scale-[1.2] transition-all duration-250'
                         />
                         <h2 className='text-lg lg:text-2xl mt-4 text-center'>&apos;BETH&apos;</h2>
                         </a>
@@ -298,7 +305,7 @@ export default function Videos(){
 
                     <div className='relative'>
                         {/* <iframe className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/NLiYuI5mHA4?si=ViNXLb5hb_mfk5--&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
-                        <a href="https://www.youtube.com/watch?v=NLiYuI5mHA4" target="_blank">
+                        <a href="https://www.youtube.com/watch?v=NLiYuI5mHA4" target="_blank" className='group'>
                         {/* <Image
                             src={IFound}
                             width={560}
@@ -316,13 +323,13 @@ export default function Videos(){
                             src={PlayIcon}
                             width={75}
                             alt="oops"
-                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px]'
+                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px] group-hover:scale-[1.2] transition-all duration-250'
                         />
                         <h2 className='text-lg lg:text-2xl mt-4 text-center'>&apos;I FOUND&apos;</h2>
                         </a>
                     </div>
                     <div className='relative'>
-                        <a href="https://www.youtube.com/watch?v=j6cJ0CznX8Y&feature=youtu.be" target="_blank">
+                        <a href="https://www.youtube.com/watch?v=j6cJ0CznX8Y&feature=youtu.be" target="_blank" className='group'>
                         {/* <Image
                             src={Wedding}
                             width={560}
@@ -340,7 +347,7 @@ export default function Videos(){
                             src={PlayIcon}
                             width={75}
                             alt="oops"
-                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px]'
+                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px] group-hover:scale-[1.2] transition-all duration-250'
                         />
                         <h2 className='text-lg lg:text-2xl mt-4 text-center'>Grant Wedding Highlight Reel</h2>
                         </a>
@@ -393,7 +400,7 @@ export default function Videos(){
                 <div className="grid grid-cols-1 gap-6 relative z-[1]">
 
                     <div className='relative'>
-                        <a href="https://www.youtube.com/watch?v=-6xjI3wfE4Y" target="_blank">
+                        <a href="https://www.youtube.com/watch?v=-6xjI3wfE4Y" target="_blank" className='group'>
                         {/* <Image
                             src={Dylan}
                             width={560}
@@ -411,7 +418,7 @@ export default function Videos(){
                             src={PlayIcon}
                             width={75}
                             alt="oops"
-                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px]'
+                            className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px] group-hover:scale-[1.2] transition-all duration-250'
                         />
                         <h2 className='text-lg lg:text-2xl mt-4 text-center'>Dylan and Mattie</h2>
                         </a>
