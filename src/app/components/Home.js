@@ -9,10 +9,11 @@ export default function Home(){
                 <h1 className="hidden">JP Motion Pictures</h1>
                 <div className="relative z-[1] text-center w-full pt-12">
                     <Image
-                        src={Logo}
+                        src={'/images/homeLogo.png'}
                         width={250}
+                        height={200}
                         alt="oops"
-                        className="mx-auto w-[200px] lg:w-[250px]"
+                        className="mx-auto h-auto w-[200px] lg:w-[250px]"
                     />
                     <h2 className="text-white text-lg lg:text-xl tracking-[3px]">
                         IMPACTFUL NARRATIVES THROUGH CINEMATIC EXCELLENCE

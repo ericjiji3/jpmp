@@ -10,8 +10,9 @@ export default function HomeIcon(){
             <a href="#home">
             <Parallax opacity={[0, 1]} startScroll={650} endScroll={1000}>
             <Image
-                src={HomeImage}
+                src={'/images/homeIcon.png'}
                 width={300}
+                height={300}
                 alt="oops"
                 className="rotate-90 w-[150px] h-auto lg:w-[300px]"
             />
