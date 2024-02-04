@@ -30,7 +30,7 @@ export default function Home(){
                             <h4 className="text-xl px-4 py-2 tracking-[3px]">My Work</h4>
                         </Link>
                     </div>
-                    <div className="block mb-6">
+                    <div className="block mb-6 animate-[upDown_2s_linear_infinite]">
                         <svg width="29" height="18" viewBox="0 0 29 18" fill="none" xmlns="http://www.w3.org/2000/svg" className="mx-auto">
                             <line x1="1.06066" y1="1.93934" x2="15.2028" y2="16.0815" stroke="white" strokeWidth="3"/>
                             <line x1="13.2963" y1="15.6708" x2="27.4384" y2="1.52865" stroke="white" strokeWidth="3"/>
