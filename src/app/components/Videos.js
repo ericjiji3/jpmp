@@ -108,11 +108,13 @@ export default function Videos(){
                 <Parallax translateX={[-200, 0]} startScroll={200} endScroll={1100}>
                 <div className='relative hidden lg:block lg:right-0 lg:rotate-0 lg:mt-0'>
                     <Image
-                        src={CameraSit}
+                        src={'/cameraSit.png'}
                         width={150}
+                        height={200}
                         alt="oops"
                         className='w-[75px] h-auto lg:w-[150px]'
                     />
+                    
                     <div className='absolute top-[-50px] left-[65px] lg:top-[-25px] lg:left-[150px]'>
                         <svg width="300" height="149" viewBox="0 0 391 149" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 74.5L390.75 0.454834V148.545L0 74.5Z" fill="#FDF0D5"/>
@@ -215,8 +217,9 @@ export default function Videos(){
                         </svg>
                     </div>
                     <Image
-                        src={CameraStand}
+                        src={'/cameraStand.png'}
                         width={150}
+                        height={200}
                         alt="oops"
                         className='w-[75px] h-auto lg:w-[150px]'
                     />
@@ -234,8 +237,9 @@ export default function Videos(){
                         </svg>
                     </div>
                     <Image
-                        src={CameraShrug}
+                        src={'/cameraShrug.png'}
                         width={150}
+                        height={200}
                         alt="oops"
                         className='w-[75px] h-auto lg:w-[150px]'
                     />
@@ -365,8 +369,9 @@ export default function Videos(){
                         </svg>
                     </div>
                     <Image
-                        src={CameraStand}
+                        src={'/cameraStand.png'}
                         width={150}
+                        height={200}
                         alt="oops"
                         className='w-[75px] h-auto lg:w-[150px]'
                     />
@@ -385,8 +390,9 @@ export default function Videos(){
                         </svg>
                     </div>
                     <Image
-                        src={CameraStand}
+                        src={'/cameraStand.png'}
                         width={150}
+                        height={200}
                         alt="oops"
                         className='w-[75px] h-auto lg:w-[150px]'
                     />

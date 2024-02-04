@@ -35,17 +35,12 @@ export default function Banner(){
                             width={250}
                             alt="oops"
                         />
-                            <Image
-                            className="px-[15px] hidden 2xl:block"
-                            src={Motto}
-                            width={250}
-                            alt="oops"
-                        />
+
                             
                     </section>
                     {width <= 1024 ? 
-            <div></div> :
-        <section className="flex animate-[swipe_5s_linear_infinite_backwards]">
+            <div className='hidden'></div> :
+        <section className="flex animate-[swipe_5s_linear_infinite_backwards] relative z-[1]">
         <Image
         className="px-[15px]"
             src={Motto}
@@ -65,18 +60,13 @@ export default function Banner(){
             alt="oops"
         />
             
-            <Image
-            className="px-[15px] hidden 2xl:block"
-            src={Motto}
-            width={250}
-            alt="oops"
-        />
+
     </section>
         }
                         
                     
                     
-                    <section className="flex animate-[swipe_5s_linear_infinite_backwards]">
+                    <section className="flex animate-[swipe_5s_linear_infinite_backwards] relative z-[1]">
                         <Image
                         className="px-[15px]"
                             src={Motto}
@@ -95,12 +85,7 @@ export default function Banner(){
                             width={250}
                             alt="oops"
                         />
-                            <Image
-                            className="px-[15px] hidden 2xl:block"
-                            src={Motto}
-                            width={250}
-                            alt="oops"
-                        />
+
                             
                     </section>
                 </div>
