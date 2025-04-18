@@ -6,13 +6,6 @@ import CameraSit from '../../../public/cameraSit.png';
 import CameraStand from '../../../public/cameraStand.png';
 import CameraShrug from '../../../public/cameraShrug.png';
 import PlayIcon from '../../../public/playIcon.png';
-import Beth from '../../../public/bethGif.gif';
-import Dylan from '../../../public/dylanGif.gif';
-import IFound from '../../../public/iFoundGif.gif';
-import Narrative from '../../../public/narrativeGif.gif';
-import OhLord from '../../../public/ohLordGif.gif';
-import Wedding from '../../../public/weddingGif.gif';
-import Worthless from '../../../public/worthlessGif.gif';
 import { useState, useEffect, useRef } from 'react';
 
 export default function Videos(){
@@ -163,25 +156,23 @@ export default function Videos(){
                     
                     
                     <div className='relative'>
-                        <a href="https://www.youtube.com/watch?v=IJZyeApOBl4&feature=youtu.be" target="_blank" className='group'>
+                        <a href="https://www.youtube.com/watch?v=SyVSQRxGytU" target="_blank" className='group'>
                         {/* <iframe className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/IJZyeApOBl4?si=nxVHxVSAeT2xwuZN&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
-                        <img
-                            src='./ohLordGif.gif'
-                            width={560}
-                            alt="oops"
-                            className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
-                        />
+
+                        <video loop muted autoPlay playsInline={true} width={560} className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'>
+                            <source src="/lastofus.mp4" />
+                        </video>
                         <Image
                             src={PlayIcon}
                             width={75}
                             alt="oops"
                             className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px] group-hover:scale-[1.2] transition-all duration-250'
                         />
-                        <h2 className='text-lg lg:text-2xl mt-4 text-center'>Narratives of the Migrant Body</h2>
+                        <h2 className='text-lg lg:text-2xl mt-4 text-center'>The Last of Us: Immunity</h2>
                         </a>
                     </div>
                     <div className='relative'>
-                        <a href="https://www.youtube.com/watch?v=JKdpSlDlILI" target="_blank" className='group'>
+                        <a href="https://www.youtube.com/watch?v=Kdb5PZP-cHM" target="_blank" className='group'>
                         {/* <Image
                             src={Worthless}
                             width={560}
@@ -189,19 +180,16 @@ export default function Videos(){
                             className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
                             alt="oops"
                         /> */}
-                        <img
-                            src='./worthlessGif.gif'
-                            width={560}
-                            alt="oops"
-                            className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
-                        />
+                        <video loop muted autoPlay playsInline={true} width={560} className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'>
+                            <source src="/slide.mp4" />
+                        </video>
                         <Image
                             src={PlayIcon}
                             width={75}
                             alt="oops"
                             className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px] group-hover:scale-[1.2] transition-all duration-250'
                         />
-                        <h2 className='text-lg lg:text-2xl mt-4 text-center'>&apos;WORTHLESS&apos; By D4VD</h2>
+                        <h2 className='text-lg lg:text-2xl mt-4 text-center'>&apos;SLIDE&apos; by DOECHII</h2>
                         </a>
                     </div>
                     
@@ -251,7 +239,7 @@ export default function Videos(){
                 <Parallax opacity={[0, 1]} startScroll={work2.start} endScroll={work2.end}>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 relative">
                     <div className='relative'>
-                        <a href="https://www.youtube.com/watch?v=cubnywwLtwg&feature=youtu.be" target="_blank" className='group'>
+                        <a href="https://www.youtube.com/watch?v=OuJi3i3-BOM" target="_blank" className='group'>
                         {/* <Image
                             src={OhLord}
                             width={560}
@@ -259,23 +247,26 @@ export default function Videos(){
                             className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
                             alt="oops"
                         /> */}
-                        <img
+                        {/* <img
                             src='./narrativeGif.gif'
                             width={560}
                             alt="oops"
                             className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
-                        />
+                        /> */}
+                        <video loop muted autoPlay playsInline={true} width={560} className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'>
+                            <source src="/besttime.mp4" />
+                        </video>
                         <Image
                             src={PlayIcon}
                             width={75}
                             alt="oops"
                             className='block absolute z-[2] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px] group-hover:scale-[1.2] transition-all duration-250'
                         />
-                        <h2 className='text-lg lg:text-2xl mt-4 text-center'>OH LORD, BENEFITS</h2>
+                        <h2 className='text-lg lg:text-2xl mt-4 text-center'>&apos;BEST TIME&apos; by Brent Faiyaz</h2>
                         </a>
                     </div>
                     <div className='relative'>
-                        <a href="https://www.youtube.com/watch?v=NlkROS81rQg" target="_blank" className='group'>
+                        <a href="https://www.youtube.com/watch?v=wk29vbZqz5o" target="_blank" className='group'>
                         {/* <Image
                             src={Beth}
                             width={560}
@@ -283,19 +274,16 @@ export default function Videos(){
                             className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
                             alt="oops"
                         /> */}
-                        <img
-                            src='./bethGif.gif'
-                            width={560}
-                            alt="oops"
-                            className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
-                        />
+                        <video loop muted autoPlay playsInline={true} width={560} className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'>
+                            <source src="/cornerstone.mp4" />
+                        </video>
                         <Image
                             src={PlayIcon}
                             width={75}
                             alt="oops"
                             className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px] group-hover:scale-[1.2] transition-all duration-250'
                         />
-                        <h2 className='text-lg lg:text-2xl mt-4 text-center'>&apos;BETH&apos;</h2>
+                        <h2 className='text-lg lg:text-2xl mt-4 text-center'>Cornerstone | Music Video</h2>
                         </a>
                     </div>
                 </div>
@@ -309,7 +297,7 @@ export default function Videos(){
 
                     <div className='relative'>
                         {/* <iframe className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md' width="560" height="350" src="https://www.youtube.com/embed/NLiYuI5mHA4?si=ViNXLb5hb_mfk5--&amp;controls=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
-                        <a href="https://www.youtube.com/watch?v=NLiYuI5mHA4" target="_blank" className='group'>
+                        <a href="https://www.youtube.com/watch?v=JKdpSlDlILI" target="_blank" className='group'>
                         {/* <Image
                             src={IFound}
                             width={560}
@@ -317,23 +305,21 @@ export default function Videos(){
                             className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
                             alt="oops"
                         /> */}
-                        <img
-                            src='./iFoundGif.gif'
-                            width={560}
-                            alt="oops"
-                            className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
-                        />
+                        
+                        <video loop muted autoPlay playsInline={true} width={560} className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'>
+                            <source src="/worthless.mp4" />
+                        </video>
                         <Image
                             src={PlayIcon}
                             width={75}
                             alt="oops"
                             className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px] group-hover:scale-[1.2] transition-all duration-250'
                         />
-                        <h2 className='text-lg lg:text-2xl mt-4 text-center'>&apos;I FOUND&apos;</h2>
+                        <h2 className='text-lg lg:text-2xl mt-4 text-center'>&apos;WORTHLESS&apos; by D4VD</h2>
                         </a>
                     </div>
                     <div className='relative'>
-                        <a href="https://www.youtube.com/watch?v=j6cJ0CznX8Y&feature=youtu.be" target="_blank" className='group'>
+                        <a href="https://www.youtube.com/watch?v=cubnywwLtwg" target="_blank" className='group'>
                         {/* <Image
                             src={Wedding}
                             width={560}
@@ -341,19 +327,22 @@ export default function Videos(){
                             className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
                             alt="oops"
                         /> */}
-                        <img
+                        {/* <img
                             src='./weddingGif.gif'
                             width={560}
                             alt="oops"
                             className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
-                        />
+                        /> */}
+                        <video loop muted autoPlay playsInline={true} width={560} className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'>
+                            <source src="/ohlord.mp4" />
+                        </video>
                         <Image
                             src={PlayIcon}
                             width={75}
                             alt="oops"
                             className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px] group-hover:scale-[1.2] transition-all duration-250'
                         />
-                        <h2 className='text-lg lg:text-2xl mt-4 text-center'>Grant Wedding Highlight Reel</h2>
+                        <h2 className='text-lg lg:text-2xl mt-4 text-center'>OH LORD, BENEFITS</h2>
                         </a>
                     </div>
 
@@ -380,17 +369,19 @@ export default function Videos(){
                 </Parallax>
                 </div>
             </div>
-            <div className='flex justify-center mb-16'>
-                <div className='relative bottom-[-200px] right-[10px] lg:bottom-[-350px] lg:right-[200px] z-[0]'>
-                <Parallax translateX={[-250, 0]} startScroll={work4.start} endScroll={work4.end}>
-                <div className="flex relative mt-auto relative scale-x-[-1]">
-                    <div className='absolute right-[45px] bottom-[25px] lg:right-[105px] lg:bottom-[115px] z-[0]'>
+          
+            <div className='flex justify-between mb-16'>
+                <div className="relative bottom-[-300px]">
+                 
+                <Parallax translateX={[-200, 0]} startScroll={work4.start} endScroll={work4.end} className='relative'> 
+                <div className="flex mt-auto relative right-[10px] lg:right-[0px] z-[0]">
+                    <div className='absolute left-[50px] bottom-[35px] lg:left-[105px] lg:bottom-[120px] z-[0] scale-x-[-1]'>
                         <svg width="300" height="150" viewBox="0 0 455 150" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M454.241 149.088L24.9614 0.845461L0.148089 141.569L454.241 149.088Z" fill="#FDF0D5"/>
                         </svg>
                     </div>
                     <Image
-                        src={'/cameraStand.png'}
+                        src={'/cameraShrug.png'}
                         width={150}
                         height={200}
                         alt="oops"
@@ -398,42 +389,65 @@ export default function Videos(){
                     />
                     
                 </div>
-                </Parallax>                    
+                </Parallax>
                 </div>
-                <div className='bg-[#FDF0D5] px-2 py-4 lg:p-8 rounded-2xl drop-shadow-md mt-14 w-full lg:w-[40%] z-[2] noise'>
+                <div className="w-full lg:w-[82%] bg-[#FDF0D5] px-2 py-4 lg:p-8 rounded-2xl drop-shadow-md mt-5 relative z-[2] noise">
                 <Parallax opacity={[0, 1]} startScroll={work4.start} endScroll={work4.end}>
-               
-                <div className="grid grid-cols-1 gap-6 relative z-[1]">
-
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 relative">
                     <div className='relative'>
-                        <a href="https://www.youtube.com/watch?v=-6xjI3wfE4Y" target="_blank" className='group'>
+                        <a href="https://www.youtube.com/watch?v=Hk8qO0goY6E" target="_blank" className='group'>
                         {/* <Image
-                            src={Dylan}
+                            src={OhLord}
                             width={560}
                             height={350}
                             className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
                             alt="oops"
                         /> */}
-                        <img
-                            src='./dylanGif.gif'
+                        {/* <img
+                            src='./narrativeGif.gif'
                             width={560}
                             alt="oops"
                             className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
+                        /> */}
+                        <video loop muted autoPlay playsInline={true} width={560} className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'>
+                            <source src="/gold.mp4" />
+                        </video>
+                        <Image
+                            src={PlayIcon}
+                            width={75}
+                            alt="oops"
+                            className='block absolute z-[2] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px] group-hover:scale-[1.2] transition-all duration-250'
                         />
+                        <h2 className='text-lg lg:text-2xl mt-4 text-center'>&apos;GOLD&apos; | DANCE VIDEO | By Mom Tudie and Maya Law</h2>
+                        </a>
+                    </div>
+                    <div className='relative'>
+                        <a href="https://www.youtube.com/watch?v=-XdVl6T2-3Y" target="_blank" className='group'>
+                        {/* <Image
+                            src={Beth}
+                            width={560}
+                            height={350}
+                            className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'
+                            alt="oops"
+                        /> */}
+                        <video loop muted autoPlay playsInline={true} width={560} className='w-full h-auto lg:h-[350px] border border-black border-[2px] rounded-md object-cover'>
+                            <source src="/pinegrove.mp4" />
+                        </video>
                         <Image
                             src={PlayIcon}
                             width={75}
                             alt="oops"
                             className='block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-85%] w-[50px] lg:w-[100px] group-hover:scale-[1.2] transition-all duration-250'
                         />
-                        <h2 className='text-lg lg:text-2xl mt-4 text-center'>Dylan and Mattie</h2>
+                        <h2 className='text-lg lg:text-2xl mt-4 text-center'>THE PINEGROVE SHUFFLE | &apos;Need 2&apos; Pinegrove</h2>
                         </a>
                     </div>
                 </div>
-                
                 </Parallax>                    
                 </div>
-            </div>
+            </div>                
+
+
         </div>
     )
 }
